@@ -2,8 +2,8 @@
 opening = "\nadd_label_with_icon|big|`2Proxy Helper Cps                                                              |left|11550|"..
 "\nadd_textbox|`5Welcome back, "..GetLocal().name.."|"..
 "\nadd_textbox|`2Thanks for purchase this Proxy Script|"..
-"\nadd_textbox|`4Don't Re-sell, Steal, `2or `4Share `2this Proxy Script|"..
-"\nadd_textbox|`2Enjoy proxy made by : `1A`!d`5i|"..
+"\nadd_textbox|`4Sell This script :)|"..
+"\nadd_textbox|`2Proxy Was not made by: `1C`!O`5DESTORM|"..
 "\nadd_spacer|small|"..
 "\nadd_label_with_icon|small|`^Information|left|5956|"..
 "\nadd_textbox|`2/proxy `w[`2Shows all proxy commands`w]|"..
