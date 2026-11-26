@@ -1,0 +1,1090 @@
+---DIALOG OPENING DIALOG
+opening = "\nadd_label_with_icon|big|`2Proxy Helper Cps                                                              |left|11550|"..
+"\nadd_textbox|`5Welcome back, "..GetLocal().name.."|"..
+"\nadd_textbox|`2Thanks for purchase this Proxy Script|"..
+"\nadd_textbox|`4Don't Re-sell, Steal, `2or `4Share `2this Proxy Script|"..
+"\nadd_textbox|`2Enjoy proxy made by : `1A`!d`5i|"..
+"\nadd_spacer|small|"..
+"\nadd_label_with_icon|small|`^Information|left|5956|"..
+"\nadd_textbox|`2/proxy `w[`2Shows all proxy commands`w]|"..
+"\nadd_textbox|`2/discord `w[`2Official discord server`w]|"..
+"\nadd_textbox|`2/news `w[`2Opens the main dialog`w]|"..
+"\nadd_spacer|small|"..
+"\nadd_quick_exit||"..
+"\nend_dialog|cl|Enjoy|"
+
+-- INFORMATION COMMAND
+cmd = [[
+add_quick_exit|
+add_label_with_icon|big|`2All Proxy Command                                                             |left|758|
+add_label|big|`0Information|left|2064|
+add_textbox|`2/proxy `w[`9Shows all proxy commands`w]|
+add_spacer|small|
+add_label|big|`0Main Command|left|2064|
+add_textbox|`2/wd `w[`4Withdraw `eBlue Gem Lock`w]|
+add_textbox|`2/dp `wor `2/depo `w[`2Deposit `eBlue Gem Lock`w]|
+add_textbox|`2/sdb `w[`9Enabled/Disabled blok SDB`w]|
+add_textbox|`2/blue `w[`9Convert black gem lock to blue gem lock`w]|
+add_textbox|`2/black `w[`9Convert blue gem lock to black gem lock`w]|
+add_textbox|`2/cv `w[`9Enabled/Disabled convert blue gem lock`w]|
+add_textbox|`2/pt `w[`9Enabled/Disabled PathFinder`w]|
+add_textbox|`2/sc `w[`9Enabled/Disabled Show Collected Lock`w]|
+add_spacer|small|
+add_label|big|`0Hoster Command|2064|
+add_textbox|`2/w `9{amount} `w[`4Drop world lock`w]|
+add_textbox|`2/d `9{amount} `w[`4Drop diamond lock`w]|
+add_textbox|`2/bg `9{amount} `w[`4Drop blue gem lock`w]|
+add_textbox|`2/bb `9{amount} `w[`4Drop black gem lock`w]|
+add_textbox|`2/cd `9{amount} `w[`4/cd `020150 = drop 2 `ebgl `w, 1 `1dl`w & 50 `6wl `w]|
+add_textbox|`2/pos1 `w[`bSet position RV1`w]|
+add_textbox|`2/pos2 `w[`bSet position RV2`w]|
+add_textbox|`2/win1 `w[`bDrop win to position 1`w]|
+add_textbox|`2/win2 `w[`bDrop win to position 2`w]|
+add_textbox|`2/tax `4{amount} `w[`bSet tax`w]|
+add_textbox|`2/take `w[`bTake lock`w]|
+add_textbox|`2/tg `w[`bShows Gems`w]|
+add_textbox|`2/reme `w[`bEnabled/disabled reme checker`w]|
+add_textbox|`2/qeme `w[`bEnabled/disabled qeme checker`w]|
+add_spacer|small|
+add_label|big|`0Wrench Command|left|
+add_textbox|`2/wrp `w[`bWrench mode pull`w]|
+add_textbox|`2/wrk `w[`bWrench mode kick`w]|
+add_textbox|`2/wrb `w[`bWrench mode ban`w]|
+add_textbox|`2/woff `w[`bFast Disabled wrench mode`w]|
+add_spacer|small|
+add_label|big|`0Food Command|left|
+add_textbox|`2/ar `9{amount} `w[`bDrop Arroz`w]|
+add_textbox|`2/lo `9{amount} `w[`bDrop Clover`w]|
+add_spacer|small|
+end_dialog|proxy|Close|
+]]
+
+-- BUTTON BTK
+BTKDIALOG = [[
+add_quick_exit|
+add_label_with_icon|big|`9CPS `0HELPER |left|13304|
+add_textbox|Hello ]]..GetLocal().name..[[|left|
+add_textbox|PROXY BY : `1A`!d`5i|left|
+text_scaling_string|imlookingcool|
+add_button_with_icon|takebet|`2Take `0Bet|staticYellowFrame|6140||
+add_button_with_icon|scangems|`2Scan `0Gems|staticYellowFrame|9436||
+add_button_with_icon|setupbtk|`2Set `0Up|staticYellowFrame|32||
+add_button_with_icon||END_LIST|noflags|0||
+add_button_with_icon|posw1|`2Win `0Player1|staticYellowFrame|2816||
+add_button_with_icon|credit|`1A`!d`5i|staticBlbeFrame|7074||
+add_button_with_icon|posw2|`2Win `0Player2|staticYellowFrame|2818||
+add_button_with_icon||END_LIST|noflags|0||
+add_button_with_icon|modmenu|`2List `0Menu|staticYellowFrame|9472||
+add_button_with_icon|proxycmd|`2List `0Command|staticYellowFrame|758||
+add_button_with_icon|socialportal|`2Social `0Portal|staticYellowFrame|1366||
+add_button_with_icon||END_LIST|noflags|0||
+end_dialog|close|Close|
+]]
+
+-- BUTTON SETUP
+SETUP = [[
+add_quick_exit|
+add_label_with_icon|big|`0FAST SETUP |left|32|
+add_textbox|`oSC : `1A`!d`5i|left|
+text_scaling_string|imlookingcool|
+add_button_with_icon|setposrv1|`2Set Pos `wRV1|staticYellowFrame|2836||
+add_button_with_icon|postez|`9and|staticBlackFrame|32||
+add_button_with_icon|setposrv2|`2Set Pos `wRV2|staticYellowFrame|2838||
+add_button_with_icon||END_LIST|noflags|0||
+add_spacer|small|
+add_button|linkback|Back|
+]]
+
+-- MORE COMMAND
+MORE = [[
+add_quick_exit|
+add_label_with_icon|big|`0Mod Menu|left|13302|
+add_textbox|`oSC : `1A`!d`5i|left|
+text_scaling_string|imlookingcool|
+add_button_with_icon|wrenchmenu|`2Wrench `0Menu|staticYellowFrame|32||
+add_button_with_icon|bsdb|`2Block `0Sdb|staticYellowFrame|2480||
+add_button_with_icon|cvdlkebgl|`2Cv `0Dl To Bgl|staticYellowFrame|7188||
+add_button_with_icon||END_LIST|noflags|0||
+add_button_with_icon|remeqeme|`2Mode `0R/Q|staticYellowFrame|758||
+add_button_with_icon|path|`2Path`0Finder|staticYellowFrame|1684||
+add_button_with_icon|show|`2Show `0Collected|staticYellowFrame|242||
+add_spacer|small|
+add_button_with_icon||END_LIST|noflags|0||
+add_button|linkback|Back|
+]]
+
+-- WRENCH MENU
+WRENCH = [[
+add_quick_exit|
+add_label_with_icon|big|`0Wrench Menu|left|32|
+add_spacer|small|
+add_button_with_icon|wpull|`2Wrench Pull|staticYellowFrame|274||
+add_button_with_icon|wkick|`4Wrench Kick|staticYellowFrame|276||
+add_button_with_icon|wban|`4Wrench Ban|staticYellowFrame|278||
+add_button_with_icon|woff|`2Wrench Off|staticYellowFrame|32||
+add_button_with_icon||END_LIST|noflags|0||
+add_button|lonkback|Back|
+]]
+
+--- REME QEME MODE
+REME = [[
+add_quick_exit|
+add_label_with_icon|big|`0Reme/Qeme Mode|left|32|
+add_spacer|small|
+add_button_with_icon|mreme|`2Reme `0Mode|staticYellowFrame|758||
+add_button_with_icon|mqeme|`2Qeme `0Mode|staticYellowFrame|758||
+add_button_with_icon||END_LIST|noflags|0||
+add_button|lonkback|Back|
+]]
+
+--- DONT TOUCH !!!
+data = {}
+local pull = false
+local kick = false
+local ban = false
+local cbgl = false
+local gasmode = false
+local bgems = false
+Count = 0
+local fasttrash = false
+local sdbb = false
+local firee = false
+local taxset = 0
+local reme = false
+local qeme = false
+local game
+local results
+local putchand = true
+pathf = false
+showco = false
+collectgems = true
+
+---FUNCTION
+
+-- proxy log system
+function ProxyLog(str)
+LogToConsole("`w[`bProxy by `1A`!d`5i`w] "..str)
+end
+
+function bubble(str)
+SendVariant({ v0 = "OnTalkBubble", v1 = GetLocal().netID, v2 = str })
+end
+
+function pos(px,py) --- ADD POS
+local hasil
+if not px and not py then
+hasil = "`2Click This To Set``"
+else
+hasil = "`b[`2X: `5"..px.."`w,`2Y: `5"..py.."`b]"
+end
+return hasil
+end
+
+-- get item inventory
+function cty(id,id2,amount)
+for _, inv in pairs(GetInventory()) do
+if inv.id == id then
+if inv.amount < amount then
+cc = {}
+cc.type = 10
+cc.value = id2
+SendPacketRaw(false, cc)
+end
+end
+end
+end
+
+-- info id player
+function wear(id)
+ct = {}
+ct.type = 10
+ct.value = id
+SendPacketRaw(false, ct)
+end
+
+-- TAKE
+function take()
+tiles = {
+{xt1,yt1},
+{xt2,yt2}
+}
+for _, obj in pairs(GetObjectList()) do
+for _, tiles in pairs(tiles) do
+if (obj.posX)//32 == tiles[1] and (obj.posY)//32 == tiles[2] then
+local pkt = {}
+pkt.type = 11
+pkt.value = obj.id
+pkt.x = obj.posX
+pkt.y = obj.posY
+SendPacketRaw(false,pkt)
+table.insert(data, {id=obj.itemid, count=obj.amount})
+end 
+end 
+end
+Data()
+end
+function Data()
+Amount = 0
+for _, list in pairs(data) do
+Name = ""
+if list.id == 11550 then
+Name = "`bBlack Gem Lock"
+Amount = Amount + list.count * 1000000
+elseif list.id == 7188 then
+Name = "`eBlue Gem Lock"
+Amount = Amount + list.count * 10000
+elseif list.id == 1796 then
+Name = "`1Diamond Lock"
+Amount = Amount + list.count * 100
+elseif list.id == 242 then
+Name = "`9World Lock"
+Amount = Amount + list.count
+end
+end
+data = {}
+end
+
+-- OVERLAY
+function ProxyOverlay(str)
+ov = {}
+ov.v0 = "OnTextOverlay"
+ov.v1 = str
+SendVariant(ov)
+end
+
+-- TAX
+function tax(percent,maxvalue)
+if tonumber(percent) and tonumber(maxvalue) then
+return (maxvalue*percent)/100
+end
+end
+function math.percent(percent,maxvalue)
+if tonumber(percent) and tonumber(maxvalue) then
+return (maxvalue*percent)/100
+end
+return false
+end
+
+-- AUTO TAX
+function eattax(x, y)
+if math.abs(GetLocal().posX // 32 - x) > 8 or math.abs(GetLocal().posY // 32 - y) > 8 then
+LogToConsole("`9[Not Found]")
+return nil
+end
+if GetTiles(x, y).collidable then
+LogToConsole("`9[Not Found]")
+return nil
+end
+local Z = 0
+if not GetTiles(x + 1, y).collidable then
+Z = 1
+elseif not GetTiles(x - 1, y).collidable then
+Z = -1
+else
+return nil
+end
+SendPacketRaw(false, { type = 0, x = (x + Z) * 32, y = y * 32, state = (Z == 1 and 48 or 32) })
+end
+
+tile = {
+pos1 = { 
+{x = xgem1, y = ygem1}, {x = xgem2, y = ygem2}, {x = xgem3, y = ygem3},
+},
+pos2 = {
+{x = xgemm1, y = ygemm1}, {x = xgemm2, y = ygemm2}, {x = xgemm3, y = ygemm3},
+}}
+
+tile = {
+pos1 = { 
+{x = xsv1, y = ysv1}, {x = xsv1, y = ysv2}, {x = xsv1, y = ysv3}, {x = xsv2, y = ysv1}, {x = xsv3, y = ysv1} 
+},
+pos2 = {
+{x = xsvv1, y = ysvv1}, {x = xsvv1, y = ysvv2}, {x = xsvv1, y = ysvv3}, {x = xsvv2, y = ysvv1}, {x = xsvv3, y = ysvv1} 
+}
+}
+
+-- TAKE GEMS
+function takegems()
+tile = (tile);
+Count = 0;
+data = {};
+do
+for _, obj in pairs(GetObjectList()) do
+for _, tiles in pairs(tile.pos1) do
+if obj.itemid == 112 and (obj.posX)//32 == tiles.x and (obj.posY)//32 == tiles.y then
+Count = Count + obj.amount;
+local pkt = {};
+pkt.type = 11;
+pkt.value = obj.id;
+pkt.x = obj.posX;
+pkt.y = obj.posY;
+SendPacketRaw(false, pkt);
+end
+end
+end
+
+table.insert(data, Count)
+Count = 0;
+for _, obj in pairs(GetObjectList()) do
+for _, tiles in pairs(tile.pos2) do
+if obj.itemid == 112 and (obj.posX)//32 == tiles.x and (obj.posY)//32 == tiles.y then
+local pkt = {};
+pkt.type = 11;
+pkt.value = obj.id;
+pkt.x = obj.posX;
+pkt.y = obj.posY;
+SendPacketRaw(false, pkt);
+Count = Count + obj.amount;
+end
+end
+end
+
+table.insert(data, Count)
+Count = 0;
+if data[1] > data[2] then
+SendPacket(2, "action|input\n|text|`0[`2Win`w] Kiri (gems) `2" .. data[1] .. " `bVs `4" .. data[2] .. " `w[`4Lose`w] Kanan (gems)");
+elseif data[1] == data[2] then
+SendPacket(2, "action|input\n|text|`0[`9TIE`0] Kiri (gems)  `a".. data[1] .." `bVs `a".. data[2] .." `0[`9TIE`0] Kanan (gems)");
+else
+SendPacket(2, "action|input\n|text|`0[`4Lose`w] Kiri (gems) `4" .. data[1] .. " `bVs `2" .. data[2].. " `w[`2Win`w] Kanan (gems)");
+end
+data = {};
+end;
+end
+
+-- QEME
+function qemefunc(number)
+    if number >= 10 then
+        hasil = string.sub(number, -1)
+    else
+        hasil = number
+    end
+    return hasil
+end
+
+function getGame(num)
+    if reme and not qeme then
+        return "`b[`0REME: `9"..remefunc(tonumber(num)).."`b]"
+    elseif not reme and qeme then
+            return "`b[`0QEME: `9"..qemefunc(tonumber(num)).."`b]"
+            else
+                return ""
+    end
+end
+
+-- REME
+function remefunc(number)
+    if number == 19 or number == 28 or number == 0 then
+        hasil = 0
+    else
+        num1 = math.floor(number / 10)
+        num2 = number % 10
+        hasil = string.sub(tostring(num1 + num2), -1)
+    end
+    return hasil
+end
+
+---Hook START !!!
+function Hook(type,str)
+if str:find("action|wrench\n|netid|(%d+)") then  -- Wrench START
+id = str:match("action|wrench\n|netid|(%d+)")
+if pull == true then
+SendPacket(2,"action|dialog_return\ndialog_name|popup\nnetID|"..id.."|\nbuttonClicked|pull")
+for _, player in pairs(GetPlayerList()) do
+if player.netID == tonumber(id) then
+SendPacket(2, "action|input\n|text|`9[ `1A`!d`5i `9] Gas Ga? "..player.name)
+return true
+elseif kick == true then
+SendPacket(2,"action|dialog_return\ndialog_name|popup\nnetID|"..id.."|\nbuttonClicked|kick")
+return true
+elseif ban == true then
+SendPacket(2,"action|dialog_return\ndialog_name|popup\nnetID|"..id.."|\nbuttonClicked|world_ban")
+return true
+end
+end
+end
+end
+
+if str:find("/wrp") or str:find("buttonClicked|wpull") then
+if pull == false then
+pull = true
+kick = false
+ban = false
+SendPacket(2, "action|input\n|text|`9[ `1A`!d`5i `9] `2Pull `wMode `2On (nuke)")
+ProxyOverlay("`w[`2Pull `wMode `2On`w]")
+return true
+end
+
+elseif str:find("/wrk") or str:find("buttonClicked|wkick") then
+if kick == false then
+kick = true
+pull = false
+ban = false
+ProxyOverlay("`w[`0Succes Change Wrench To `4Kick `2Mode`w]")
+return true
+end
+
+elseif str:find("/wrb") or str:find("buttonClicked|wban") then
+if ban == false then
+ban = true
+kick = false
+pull = false
+ProxyOverlay("`w[`0Succes Change Wrench To `4Ban `2Mode`w]")
+return true
+end
+end --WRENCH FINISH
+
+if str:find("/pt") or str:find("buttonClicked|path") then
+if pathf == false then
+pathf = true
+EditToggle("PathFinder", true)
+SendPacket(2,"action|input\ntext|`9[ `1A`!d`5i `9] `2Enabled `wPathFinder")
+ProxyOverlay("`2Enabled `wPathFinder")
+return true
+else
+pathf = false
+EditToggle("PathFinder", false)
+SendPacket(2,"action|input\ntext|`9[ `1A`!d`5i `9] `4Disabled `wPathFinder")
+ProxyOverlay("`4Disabled `wPathFinder")
+return true
+end
+end
+
+if str:find("/sc") or str:find("buttonClicked|show") then
+if showco == false then
+showco = true
+SendPacket(2,"action|input\ntext|`9[ `1A`!d`5i `9] `2Enabled `wShow Collected Lock (wl)")
+ProxyOverlay("`2Enabled `wShow Collected Lock")
+return true
+else
+showco = false
+SendPacket(2,"action|input\ntext|`9[ `1A`!d`5i `9] `4Disabled `wShow Collected Lock (wl)")
+ProxyOverlay("`4Disabled `wShow Collected Lock")
+return true
+end
+end
+
+if str:find("/cv") or str:find("buttonClicked|cvdlkebgl") then ---CHANGE BGL
+if cbgl == false then
+cbgl = true
+SendPacket(2,"action|input\ntext|`9[ `1A`!d`5i `9] `2Enabled `wFast Change BGL")
+ProxyOverlay("`2Enabled `wFast Change BGL")
+return true
+else
+cbgl = false
+SendPacket(2,"action|input\ntext|`9[ `1A`!d`5i `9] `4Disabled `wFast Change BGL")
+ProxyOverlay("`4Disabled `wFast Change BGL")
+return true
+end
+end
+
+if str:find("friends") then --- BANNER BTK
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = BTKDIALOG
+SendVariant (var)
+end
+
+if str:find("buttonClicked|proxycmd") then --- BANNER PROXY
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = cmd
+SendVariant(var);
+end
+
+if str:find("/proxy") then --- BANNER PROXY
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = cmd
+SendVariant(var);
+end
+
+if str:find("buttonClicked|setupbtk") then --- GEMS 
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = SETUP
+SendVariant(var);
+end
+
+if str:find("buttonClicked|modmenu") then
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = MORE
+SendVariant(var);
+end
+
+if str:find("buttonClicked|wrenchmenu") then
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = WRENCH
+SendVariant(var);
+end
+
+if str:find("buttonClicked|linkback") then
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = BTKDIALOG
+SendVariant(var);
+end
+
+if str:find("buttonClicked|lonkback") then
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = MORE
+SendVariant(var);
+end
+
+
+if str:find("buttonClicked|remeqeme") then
+var = {}
+var.v0 = "OnDialogRequest"
+var.v1 = REME
+SendVariant(var);
+end
+
+
+if str:find("/reme") or str:find("buttonClicked|mreme") then
+if reme == false then
+reme = true
+qeme = false
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `4Reme `wMode On (evil)")
+ProxyOverlay("`4Reme `wMode On")
+return true
+else
+reme = false
+qeme = false
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `4Reme `wMode Off (evil)")
+ProxyOverlay("`4Reme `wMode Off")
+return true
+end
+end
+
+if str:find("/qeme") or str:find("buttonClicked|mqeme") then
+if qeme == false then
+qeme = true
+reme = false
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `2Qeme `wMode On (tongue)")
+ProxyOverlay("`2Qeme `wMode On")
+return true
+else
+qeme = false
+reme = false
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `2Qeme `wMode Off (tongue)")
+ProxyOverlay("`2Qeme `wMode Off")
+return true
+end
+end
+
+if str:find("/sdb") or str:find("buttonClicked|bsdb") then
+if sdbb == false then
+sdbb = true
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `2Enabled `wBlock SDB (megaphone)")
+ProxyOverlay("`2Enabled `wBlock SDB")
+return true
+else
+sdbb = false
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `4Disabled `wBlock SDB (megaphone)")
+ProxyOverlay("`4Disabled `wBlock SDB")
+return true
+end
+end
+
+if str:find("/blue") then ---IRENG TO BGL
+SendPacket(2,"action|dialog_return\ndialog_name|info_box\nbuttonClicked|make_bluegl")
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `wSuccessfully Convert `bBlack Gem Lock `wTo `eBlue Gem Lock")
+return true
+elseif str:find("/black") then ---BGL TO IRENG
+SendPacket(2,"action|dialog_return\ndialog_name|info_box\nbuttonClicked|make_bgl")
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `wSuccessfully Convert `eBlue Gem Lock `wTo `bBlack Gem Lock")
+return true
+end
+
+if str:find("/woff") or str:find("buttonClicked|woff") then
+var = {}
+ban = false
+kick = false
+pull = false
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `4Disabled `wWrench `2Mode (halo) ")
+ProxyOverlay("`w[`4Disabled `wWrench `2Mode`w]")
+return true
+end
+
+if str:find("/tax (%d+)") then
+taxset = str:match("/tax (%d+)")
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `2Tax : `0"..taxset.."%")
+return true
+end
+
+if str:find("/win1") or str:find("buttonClicked|posw1") then
+ireng = math.floor(jatuh/1000000)
+bgl = math.floor(jatuh/10000)
+jatuh = jatuh - bgl*10000 
+dl = math.floor(jatuh/100)
+wl = jatuh % 100
+eattax(x1, y1)
+wear(7188)
+wear(1796)
+DropMode = true
+hasil = (ireng ~= 0 and ireng.." `bBlack Gem Lock`0" or "`0").." "..(bgl ~= 0 and bgl.." `eBlue Gem Lock`0" or "`0").." "..(dl ~= 0 and dl.." `1Diamond Lock`0" or "`0").." "..(wl ~= 0 and wl.." `9World Lock`0" or "`0")
+SendPacket(2, "action|input\n|text|`9[ `1A`!d`5i `9] `2TAX `w[`9 "..taxset.."% `w] `0YA SIR(shy)")
+return true
+end
+
+if str:find("/win2") or str:find("buttonClicked|posw2") then
+ireng = math.floor(jatuh/1000000)
+bgl = math.floor(jatuh/10000)
+jatuh = jatuh - bgl*10000 
+dl = math.floor(jatuh/100)
+wl = jatuh % 100
+eattax(x2, y2)
+wear(7188)
+wear(1796)
+DropMode = true
+hasil = (ireng ~= 0 and ireng.." `bBlack Gem Lock`0" or "`0").." "..(bgl ~= 0 and bgl.." `eBlue Gem Lock`0" or "`0").." "..(dl ~= 0 and dl.." `1Diamond Lock`0" or "`0").." "..(wl ~= 0 and wl.." `9World Lock`0" or "`0")
+SendPacket(2, "action|input\n|text|`9[ `1A`!d`5i `9] `2TAX `w[`9 "..taxset.."% `w] `0YA SIR(shy)")
+return true
+end
+
+if str:find("/pos1") or str:find("buttonClicked|setposrv1") then
+xhost = GetLocal().posX//32
+yhost = GetLocal().posY//32
+Sleep(1)
+xgem1 = GetLocal().posX//32 - 3
+ygem1 = GetLocal().posY//32
+xgem2 = xgem1 - 1
+xgem3 = xgem1 - 2
+tile = {
+pos1 = { 
+{x = xgem1, y = ygem1}, {x = xgem1, y = ygem2}, {x = xgem1, y = ygem3}, {x = xgem2, y = ygem1}, {x = xgem3, y = ygem1} 
+},
+pos2 = {
+{x = xgemm1, y = ygemm1}, {x = xgemm1, y = ygemm2}, {x = xgemm1, y = ygemm3}, {x = xgemm2, y = ygemm1}, {x = xgemm3, y = ygemm1} 
+}
+}
+Sleep(1)
+xt1 = GetLocal().posX//32 - 3
+yt1 = GetLocal().posY//32 - 2
+Sleep(1)
+x1 = GetLocal().posX//32 - 4
+y1 = GetLocal().posY//32 - 2
+Sleep(1)
+xgemm1 = GetLocal().posX//32 + 3
+ygemm1 = GetLocal().posY//32
+xgemm2 = xgemm1 + 1
+xgemm3 = xgemm1 + 2
+tile = {
+pos1 = { 
+{x = xgem1, y = ygem1}, {x = xgem1, y = ygem2}, {x = xgem1, y = ygem3}, {x = xgem2, y = ygem1}, {x = xgem3, y = ygem1} 
+},
+pos2 = {
+{x = xgemm1, y = ygemm1}, {x = xgemm1, y = ygemm2}, {x = xgemm1, y = ygemm3}, {x = xgemm2, y = ygemm1}, {x = xgemm3, y = ygemm1} 
+}
+}
+Sleep(1)
+xt2 = GetLocal().posX//32 + 3
+yt2 = GetLocal().posY//32 - 2
+Sleep(1)
+x2 = GetLocal().posX//32 + 4
+y2 = GetLocal().posY//32 - 2
+Sleep(1)
+SendPacket(2, "action|input\n|text|`9[ `1A`!d`5i `9] `2DONE `0SET POS [ `2RV1 `0] (troll)")
+return true
+end
+
+if str:find("/pos2") or str:find("buttonClicked|setposrv2") then
+xhost = GetLocal().posX//32
+yhost = GetLocal().posY//32
+Sleep(1)
+xgem1 = GetLocal().posX//32 - 3
+ygem1 = GetLocal().posY//32
+xgem2 = xgem1 - 1
+xgem3 = xgem1 - 2
+tile = {
+pos1 = { 
+{x = xgem1, y = ygem1}, {x = xgem1, y = ygem2}, {x = xgem1, y = ygem3}, {x = xgem2, y = ygem1}, {x = xgem3, y = ygem1} 
+},
+pos2 = {
+{x = xgemm1, y = ygemm1}, {x = xgemm1, y = ygemm2}, {x = xgemm1, y = ygemm3}, {x = xgemm2, y = ygemm1}, {x = xgemm3, y = ygemm1} 
+}
+}
+Sleep(1)
+xt1 = GetLocal().posX//32 - 3
+yt1 = GetLocal().posY//32 + 2
+Sleep(1)
+x1 = GetLocal().posX//32 - 4
+y1 = GetLocal().posY//32 + 2
+Sleep(1)
+xgemm1 = GetLocal().posX//32 + 3
+ygemm1 = GetLocal().posY//32 
+xgemm2 = xgemm1 + 1
+xgemm3 = xgemm1 + 2
+tile = {
+pos1 = { 
+{x = xgem1, y = ygem1}, {x = xgem1, y = ygem2}, {x = xgem1, y = ygem3}, {x = xgem2, y = ygem1}, {x = xgem3, y = ygem1} 
+},
+pos2 = {
+{x = xgemm1, y = ygemm1}, {x = xgemm1, y = ygemm2}, {x = xgemm1, y = ygemm3}, {x = xgemm2, y = ygemm1}, {x = xgemm3, y = ygemm1} 
+}
+}
+Sleep(1)
+xt2 = GetLocal().posX//32 + 3
+yt2 = GetLocal().posY//32 + 2
+Sleep(1)
+x2 = GetLocal().posX//32 + 4
+y2 = GetLocal().posY//32 + 2
+Sleep(1)
+SendPacket(2, "action|input\n|text|`9[ `1A`!d`5i `9] `2DONE `0SET POS [ `2RV2 `0] (troll)")
+return true
+end
+
+if str:find("/tg") or str:find("buttonClicked|scangems") then
+takegems()
+return true
+end
+
+if str:find("/take") or str:find("buttonClicked|takebet") then
+take()
+tax = math.floor(Amount * taxset / 100)
+jatuh = Amount - tax
+bet = math.floor(Amount / 2)
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `w[`2P1 : `0"..bet.." (wl)`w] `9Vs `w[`2P2 : `0"..bet.." (wl)`w] [`1Tax : `0"..taxset.."%`w] [`2Drop : `0"..jatuh.." (wl)`w]")
+return true
+end
+
+if str:find("/w (%d+)") then
+count = str:match("/w (%d+)")
+c = tonumber (count)
+cty(242,1796,c)
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|242|\nitem_count|"..count)
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `wDropped "..count.. " `9World Lock")
+return true
+end
+
+if str:find("/d (%d+)") then
+count = str:match("/d (%d+)")
+c = tonumber (count)
+cty(1796,242,c)
+cty(1796,7188,c)
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|1796|\nitem_count|"..count)
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `wDropped "..count.. " `1Diamond Lock")
+return true
+end
+
+if str:find("/bg (%d+)") then
+count = str:match("/bg (%d+)")
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|7188|\nitem_count|"..count)
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `wDropped "..count.. " `eBlue Gem Lock")
+return true
+end
+
+if str:find("/bb (%d+)") then
+count = str:match("/bb (%d+)")
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|11550|\nitem_count|"..count)
+SendPacket(2,"action|input\ntext|`9[ `1A`!d`5i `9] `wDropped "..count.." `bBlack Gem Lock")
+return true
+end
+
+if str:find("/cd (%d+)") then
+jatuh = str:match("/cd (%d+)")
+ireng = math.floor(jatuh/1000000)
+bgl = math.floor(jatuh/10000)
+jatuh = jatuh - bgl*10000 
+dl = math.floor(jatuh/100)
+wl = jatuh % 100
+wear(7188)
+wear(1796)
+CMode = true
+hasil = (ireng ~= 0 and ireng.." `bBlack Gem Lock`0" or "`0").." "..(bgl ~= 0 and bgl.." `eBlue Gem Lock`0" or "`0").." "..(dl ~= 0 and dl.." `1Diamond Lock`0" or "`0").." "..(wl ~= 0 and wl.." `9World Lock`0" or "`0")
+SendPacket(2,"action|input\ntext|`9[ `1A`!d`5i `9] `wDropped "..hasil)
+return true 
+end
+
+if str:find("/wd (%d+)") then
+WdBgl = str:match("/wd (%d+)")
+SendPacket(2, "action|dialog_return\ndialog_name|bank_withdraw\nbgl_count|"..WdBgl)
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `wWithdraw "..WdBgl.." `eBlue Gem Lock `wfrom bank")
+return true
+end
+
+if str:find("/depo (%d+)") or str:find("/dp (%d+)") then
+DpBgl = str:match("/depo (%d+)") or str:match("/dp (%d+)")
+SendPacket(2, "action|dialog_return\ndialog_name|bank_deposit\nbgl_count|"..DpBgl)
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `wDeposit "..DpBgl.." `eBlue Gem Lock `wto bank")
+return true
+end
+
+if str:find("/ar (%d+)") then
+darroz = str:match("/ar (%d+)")
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|4604|\nitem_count|"..darroz)
+SendPacket(2, "action|input\n|text|`9[ `1A`!d`5i `9] `wDropped "..darroz.." `6Arroz")
+return true
+end
+
+if str:find("/lo (%d+)") then
+dclov = str:match("/lo (%d+)") 
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|528|\nitem_count|"..dclov)
+SendPacket(2, "action|input\n|text|`9[ `1A`!d`5i `9] `wDropped "..dclov.." `2Clover")
+return true
+end
+
+if str:find("buttonClicked|socialportal") then
+        SendPacket(2,"action|dialog_return\ndialog_name|social\nbuttonClicked|back")
+        ProxyOverlay("`7Welcome to Normal Social Portal")
+        return true
+    end
+    return false
+    end
+
+function var(var) 
+if var.v1:find("OnConsoleMessage") and var.v2:find("World Locked") then
+SendVariant({
+	v0 = "OnAddNotification",
+	v1 = "interface/atomic_button.rttex",
+	v2 = "`w[`4WARNING`w] Always `2SAFE/REC `wBefore `4PLAY",
+	v3 = "audio/hub_open.wav"
+})
+end
+
+if var.v1:find("OnConsoleMessage") and var.v2:find("World Locked") then
+SendPacket(2,"action|input\n|text|`cPremium `bProxy `wby : `1A`!d`5i")
+end
+
+if var.v1:find("OnConsoleMessage") and var.v2:find("spun the wheel") then
+ProxyLog("`w[`2REAL`w] "..var.v2)
+return true
+end
+
+if var.v1 == "OnTalkBubble" and var.v3:find("left,") and var.v3:find("<") and var.v3:find(">") then
+SendVariant({v0 = var.v1, v1 = var.v2, v2 = var.v3.." `w[`bLEFT`w]", v3 = var.v4})
+return true
+end
+
+
+if var.v1 == "OnTalkBubble" and var.v3:find("entered,") and var.v3:find("<") and var.v3:find(">") then
+SendVariant({v0 = var.v1, v1 = var.v2, v2 = var.v3.." `w[`2ENTERED`w]", v3 = var.v4})
+return true
+end
+
+if var.v1:find("OnConsoleMessage") and var.v2:find("Collected") and var.v2:find("(%d+) World Lock") then
+jumlah = var.v2:match("(%d+) World Lock")
+wear(242)
+end
+
+if var.v1:find("OnConsoleMessage") and var.v2:find("Collected") and var.v2:find("(%d+) Black Gem Lock") then
+jumlah = var.v2:match("(%d+) Black Gem Lock")
+end
+
+if showco then
+if var.v1:find("OnConsoleMessage") and var.v2:find("oCollected") and var.v2:find("World") then
+jumlah = var.v2:match("(%d+)")
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `wCollected "..jumlah.." `9World Lock")
+end
+if var.v1:find("OnConsoleMessage") and var.v2:find("oCollected") and var.v2:find("Diamond") then
+jumlah = var.v2:match("(%d+)")
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `wCollected "..jumlah.." `1Diamond Lock")
+end
+if var.v1:find("OnConsoleMessage") and var.v2:find("oCollected") and var.v2:find("Blue Gem") then
+jumlah = var.v2:match("(%d+)")
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `wCollected "..jumlah.." `eBlue Gem Lock")
+end
+if var.v1:find("OnConsoleMessage") and var.v2:find("oCollected") and var.v2:find("Black Gem") then
+jumlah = var.v2:match("(%d+)")
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `wCollected "..jumlah.." `bBlack Gem Lock")
+end
+end
+
+if var.v1:find("OnKill") then
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `bRESPAWN")
+end
+
+if var.v1:find("OnConsoleMessage") and var.v2:find("(%d+) Diamond Lock") then
+jumlah = var.v2:match("(%d+) Diamond Lock")
+LogCollect = LogCollect.."\nadd_label_with_icon|small|`w[`2"..os.date("%H:%M").."`w] `wYou've Collected `5"..jumlah.." `1Diamond Lock|left|1796|\n"
+s = tonumber(jumlah)
+for _, tile in pairs(GetTiles()) do
+if tile.fg == 3898 then
+for _, inv in pairs(GetInventory()) do
+if inv.id == 1796 then
+if inv.amount > 100 or s > 99 then
+SendPacket(2,"action|dialog_return\ndialog_name|telephone\nnum|53785|\nx|"..tile.x.."|\ny|"..tile.y.."|\nbuttonClicked|bglconvert")
+ProxyOverlay("`2Successfully `2Change Blue Gem Lock")
+end
+end
+end
+end
+end
+end
+if var.v1:find("OnDialogRequest") and var.v2:find("Wow, that's fast delivery.") then
+return true
+end
+if var.v1:find("OnConsoleMessage") then
+ProxyLog("`b"..var.v2)
+return true
+end
+
+if var.v1:find("OnSDBroadcast") then
+if sdbb == true then
+ProxyOverlay("`9[ `1A`!d`5i `9] `4BLOCKED SDB!")
+return true
+end
+end
+
+if var.v1:find("OnDialogRequest") and var.v2:find("`wTelephone") then
+if cbgl == true then
+x = var.v2:match("embed_data|x|(%d+)")
+y = var.v2:match("embed_data|y|(%d+)")      
+SendPacket(2,"action|dialog_return\ndialog_name|telephone\nnum|53785|\nx|"..x.."|\ny|"..y.."|\nbuttonClicked|bglconvert")
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `wConvert `1100 Diamond Lock `wto `e1 Blue Gem Lock")
+return true
+end
+end
+
+if var.v1 == "OnTalkBubble" and var.v3:find("spun the wheel") and var.v3:find("<") and var.v3:find(">") then
+SendVariant({v0 = var.v1, v1 = var.v2, v2 = var.v3.." `w[`4FAKE`w]", v3 = var.v4})
+return true
+end
+
+if var.v1:find("OnTalkBubble") and var.v3:find("spun the wheel") then 
+if reme == true or qeme == true then
+local num = string.gsub(string.gsub(var.v3:match("and got (.+)"), "!%]", ""), "`", "")
+local onlynumber = string.sub(num, 2)
+local clearspace = string.gsub(onlynumber, " ", "")
+local h = string.gsub(string.gsub(clearspace, "!7", ""), "]", "")
+SendVariant({v0 = var.v1, v1 = var.v2, v2 = "`w[`2REAL`w] "..var.v3.." "..getGame(tonumber(h)), v3 = var.v4})
+return true
+end
+end
+
+if var.v1:find("OnTalkBubble") and var.v3:find("spun the wheel") then
+SendVariant({v0 = var.v1, v1 = var.v2, v2 = "`w[`2REAL`w] "..var.v3, v3 = var.v4})
+return true
+end
+return false
+end
+
+AddHook(Hook, "OnSendPacket") 
+AddHook(var, "OnVariant") 
+SendPacket(2, "action|input\n|text|`9Running `eProxy `wby : `1A`!d`5i")
+SendVariant({v0 = "OnDialogRequest", v1 = opening })
+
+for i = 1, 1000000 do
+if 1 ~=  1000000 then
+end
+Sleep(2000)
+if CMode then
+if ireng then
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|11550|\nitem_count|"..ireng)
+Sleep(500)
+end
+if bgl then
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|7188|\nitem_count|"..bgl)
+Sleep(500)
+end
+if dl then
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|1796|\nitem_count|"..dl)
+Sleep(500)
+end
+if wl then
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|242|\nitem_count|"..wl)
+Sleep(500)
+CMode = false
+end
+end
+
+if DropMode then
+if ireng then
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|11550|\nitem_count|"..ireng)
+Sleep(500)
+end
+if bgl then
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|7188|\nitem_count|"..bgl)
+Sleep(500)
+end
+if dl then
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|1796|\nitem_count|"..dl)
+Sleep(500)
+end
+if wl then
+SendPacket(2, "action|dialog_return\ndialog_name|drop\nitem_drop|242|\nitem_count|"..wl)
+Sleep(500)
+end
+
+jatuh = nil
+DropMode = false
+if putchand then
+Sleep(350)
+SendPacket(2, "action|input\ntext|`9[ `1A`!d`5i `9] `4Wait `9Putting Chand (grin)")
+FindPath(xgem1,ygem1,100)
+Sleep(100)
+SendPacketRaw(false, {
+type = 3,
+value = 5640,
+x = GetLocal().posX,
+y = GetLocal().posY,
+px = xgem1,
+py = ygem1,
+state = 16
+})
+Sleep(150)
+FindPath(xgem2,ygem1,100)
+SendPacketRaw(false, {
+type = 3,
+value = 5640,
+x = GetLocal().posX,
+y = GetLocal().posY,
+px = xgem1-1,
+py = ygem1,
+state = 16
+})
+Sleep(150)
+FindPath(xgem3,ygem1,100)
+SendPacketRaw(false, {
+type = 3,
+value = 5640,
+x = GetLocal().posX,
+y = GetLocal().posY,
+px = xgem1-2,
+py = ygem1,
+state = 16
+})
+Sleep(450)
+FindPath(xgemm1,ygemm1,100)
+Sleep(150)
+SendPacketRaw(false, {
+type = 3,
+value = 5640,
+x = GetLocal().posX,
+y = GetLocal().posY,
+px = xgemm1,
+py = ygemm1,
+state = 16
+})
+Sleep(150)
+FindPath(xgemm2,ygemm1,100)
+SendPacketRaw(false, {
+type = 3,
+value = 5640,
+x = GetLocal().posX,
+y = GetLocal().posY,
+px = xgemm1+1,
+py = ygemm1,
+state = 16
+})
+Sleep(150)
+FindPath(xgemm3,ygemm1,100)
+SendPacketRaw(false, {
+type = 3,
+value = 5640,
+x = GetLocal().posX,
+y = GetLocal().posY,
+px = xgemm1+2,
+py = ygemm1,
+state = 16
+})
+Sleep(150)
+SendPacket(2,"action|input\n|text|`9[ `1A`!d`5i `9] `2Done `9Putting Chand (wow)")
+FindPath(xhost,yhost,100)
+end
+end
+Sleep(4500)
+end
